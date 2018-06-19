@@ -1,6 +1,6 @@
 {
   "name": "proptypes-to-ts-declarations",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "Generate TypeScript declarations for your components from PropTypes",
   "main": "./src/index.js",
   "scripts": {
@@ -21,8 +21,7 @@
     "glob": "^7.1.2",
     "lodash": "^4.17.10",
     "prettier": "^1.13.5",
-    "react": "^16.4.1",
-    "react-docgen": "^2.20.1"
+    "react-docgen": "2.20.1"
   },
   "devDependencies": {
     "code": "^5.2.0",
