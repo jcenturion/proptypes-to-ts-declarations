@@ -1,11 +1,12 @@
 {
   "name": "proptypes-to-ts-declarations",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "Generate TypeScript declarations for your components from PropTypes",
   "main": "src/index.js",
   "scripts": {
     "test": "lab ./test -v -c"
   },
+  "repository": "jcenturion/proptypes-to-ts-declarations",
   "author": "centurion.javier@gmail.com",
   "license": "MIT",
   "keywords": [
@@ -13,9 +14,6 @@
     "typescript",
     "prop-types",
     "proptypes",
-    "extract",
-    "extractor",
-    "types",
     "definitions",
     "declarations"
   ],
