@@ -1,0 +1,33 @@
+{
+  "name": "proptypes-to-ts-declarations",
+  "version": "0.8.0",
+  "description": "Generate TypeScript declarations for your components from PropTypes",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "lab ./test -v -c"
+  },
+  "author": "centurion.javier@gmail.com",
+  "license": "MIT",
+  "keywords": [
+    "ts",
+    "typescript",
+    "prop-types",
+    "proptypes",
+    "extract",
+    "extractor",
+    "types",
+    "definitions",
+    "declarations"
+  ],
+  "dependencies": {
+    "glob": "^7.1.2",
+    "lodash": "^4.17.10",
+    "prettier": "^1.13.5",
+    "react": "^16.4.1",
+    "react-docgen": "^2.20.1"
+  },
+  "devDependencies": {
+    "code": "^5.2.0",
+    "lab": "^15.5.0"
+  }
+}
