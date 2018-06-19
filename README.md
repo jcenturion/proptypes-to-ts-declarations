@@ -7,7 +7,7 @@ Creates TS declarations from your components library.
 Install it:
 
 ```
-$ npm install proptypes-to-ts-declarations
+$ npm install proptypes-to-ts-declarations
 ```
 
 Using it:
