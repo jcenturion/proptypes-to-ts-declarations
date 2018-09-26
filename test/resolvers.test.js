@@ -21,7 +21,12 @@ describe('resolvers', () => {
 
   it('should correctly resolve propsName', () => {
     const propsName = propsNameResolver({ displayName: 'component' });
-    expect(propsName).to.equal('component_props');
+    expect(propsName).to.equal('ComponentProps');
+  });
+
+  it('should correctly resolve multi-word component propsName', () => {
+    const propsName = propsNameResolver({ displayName: 'myComponent' });
+    expect(propsName).to.equal('MyComponentProps');
   });
 
   it('should correctly resolve ts type', () => {
