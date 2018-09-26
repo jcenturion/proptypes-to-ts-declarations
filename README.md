@@ -13,12 +13,9 @@ $ npm install proptypes-to-ts-declarations
 Using it:
 
 ```javascript
-const propTypesToTS = require('proptypes-to-ts-declarations');
+const propTypesToTS = require("proptypes-to-ts-declarations");
 
-propTypesToTS(
-  'my-library',
-  './src/components/**/*.js',
-  './index.d.ts');
+propTypesToTS("my-library", "./src/components/**/*.js", "./index.d.ts");
 ```
 
 ## Example
@@ -45,19 +42,14 @@ MyComponent.propTypes = {
 declare module "my-library" {
   import * as React from "react";
 
-  type timeEnum =
-    | "default"
-    | "information"
-    | "success"
-    | "warning"
-    | "danger";
+  type timeEnum = "default" | "information" | "success" | "warning" | "danger";
 
-  export interface my_component_props {
+  export interface MyComponentProps {
     className?: string;
     time: timeEnum;
     name: string;
   }
 
-  export const MyComponent: React.ComponentClass<my_component_props>;
+  export const MyComponent: React.ComponentClass<MyComponentProps>;
 }
 ```
