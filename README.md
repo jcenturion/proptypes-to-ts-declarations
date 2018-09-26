@@ -43,10 +43,10 @@ declare module "my-library" {
   import * as React from "react";
 
   type timeEnum = 
-    | "default" 
-    | "information" 
-    | "success" 
-    | "warning" 
+    | "default"
+    | "information"
+    | "success"
+    | "warning"
     | "danger";
 
   export interface MyComponentProps {
