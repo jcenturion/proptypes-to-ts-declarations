@@ -49,7 +49,7 @@ describe('builder', () => {
       .next(Strategies.interfaceStrategy)
       .end();
 
-    expect(result).to.equal('\n\ntype componentEnumEnum = \"default\";\n   export const Component: React.ComponentClass<component_props>;\n\n  interface component_props {\n     string?: string\n func?(): void\n\n  /**\n   * prop comment\n  */\n enum?: componentEnumEnum\n  }\n');
+    expect(result).to.equal('\n\ntype componentEnumEnum = \"default\";\n   export const Component: React.ComponentClass<ComponentProps>;\n\n  interface ComponentProps {\n     string?: string\n func?(): void\n\n  /**\n   * prop comment\n  */\n enum?: componentEnumEnum\n  }\n');
   });
 
   describe('strategies', () => {
@@ -171,7 +171,7 @@ describe('builder', () => {
           tsTypeResolver
         });
 
-        expect(interface).to.equal('\n  interface component_props {\n     string?: string\n func?(): void\n\n  /**\n   * prop comment\n  */\n enum?: componentEnumEnum\n  }\n');
+        expect(interface).to.equal('\n  interface ComponentProps {\n     string?: string\n func?(): void\n\n  /**\n   * prop comment\n  */\n enum?: componentEnumEnum\n  }\n');
       });
     })
 
@@ -197,7 +197,7 @@ describe('builder', () => {
           propsNameResolver
         });
 
-        expect(header).to.equal('\n   export const Component: React.ComponentClass<component_props>;\n');
+        expect(header).to.equal('\n   export const Component: React.ComponentClass<ComponentProps>;\n');
       });
     });
   });
